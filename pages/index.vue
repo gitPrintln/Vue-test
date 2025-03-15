@@ -10,7 +10,10 @@
 
   <h3 style="color: red; font-size: 20px;">style binding test</h3>
   <h3 :style="{color: fontColor, fontSize: fontSize + 'px' }">style binding test</h3>
-  <button @click="change">버튼</button>
+  <router-link to="/home2">v-if,v-show Page(router-link)</router-link>
+  <div>
+  <button @click="goToHome2">v-if,v-show Page(SPA방식)</button>
+  </div>
 </template>
 
 <script>
@@ -27,6 +30,9 @@ export default {
   methods: {
       change() {
         this.isActive = !this.isActive
+      },
+      goToHome2() {
+        this.$router.push("home2");
       },
   },
 }

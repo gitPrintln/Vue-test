@@ -10,8 +10,8 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "nuxt": "^3.16.0",
-    "vue": "^3.5.13",
-    "vue-router": "^4.5.0"
+    "@toast-ui/editor": "^3.2.2",
+    "nuxt": "^2.18.1",
+    "vue-router": "^3.6.5"
   }
 }
