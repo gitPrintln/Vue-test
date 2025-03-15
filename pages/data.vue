@@ -5,10 +5,8 @@
     </div>
 </template>
 
-<script setup lang="ts">
+<script>
 import ChildComponent from '@/components/ChildComponent.vue'
-
-const title = ref<string>('부모 컴포넌트에서 선언된 데이터입니다.')
 
 export default {
         components: {
