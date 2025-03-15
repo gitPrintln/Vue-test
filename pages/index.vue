@@ -1,6 +1,39 @@
 <template>
-    <div>
-        <h1>홈 페이지</h1>
-        <p>이곳은 index</p>
-  </div>
+  <h1>Vue.js 테스트</h1>
+  <div>{{ rawHTML }}</div>
+  <div>{{ rawHTML2 }}</div>
+  <h1 v-html="rawHTML2"></h1>
+
+  <h2 v-bind:class="{active: isActive}">class binding test</h2>
+  <h2 :class="{active: isActive}">class binding test</h2>
+  <button @click="change">버튼</button>
+
+  <h3 style="color: red; font-size: 20px;">style binding test</h3>
+  <h3 :style="{color: fontColor, fontSize: fontSize + 'px' }">style binding test</h3>
+  <button @click="change">버튼</button>
 </template>
+
+<script>
+export default {
+  data() {
+    return{
+      rawHTML: '이것은 텍스트입니다.',
+      rawHTML2: '<span style="color: red"> 이것은 빨간색입니다.</span>',
+      isActive: false,
+      fontColor: '#888888',
+      fontSize: 30,
+    }
+  },
+  methods: {
+      change() {
+        this.isActive = !this.isActive
+      },
+  },
+}
+</script>
+
+<style>
+h2.active{
+  color: green;
+}
+</style>
