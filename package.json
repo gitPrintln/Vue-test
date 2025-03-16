@@ -11,7 +11,14 @@
   },
   "dependencies": {
     "@toast-ui/editor": "^3.2.2",
+    "@vue/runtime-dom": "^3.5.13",
     "nuxt": "^3.16.0",
-    "vue-router": "^4.5.0"
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0",
+    "vuex": "^4.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.22.0",
+    "eslint-plugin-vue": "^10.0.0"
   }
 }

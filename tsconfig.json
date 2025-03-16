@@ -1,4 +1,12 @@
 {
   // https://nuxt.com/docs/guide/concepts/typescript
-  "extends": "./.nuxt/tsconfig.json"
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "baseUrl": ".",   // baseUrl을 설정하여 모듈을 찾을 때 루트를 기준으로 해석
+    "paths": {
+      "vue": ["node_modules/vue"]
+    }
+  }
+
 }

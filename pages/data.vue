@@ -9,23 +9,20 @@
     </div>
 </template>
 
-<script>
-import ChildComponent from '@/components/ChildComponent.vue'
-export default {
-        components: {
-            ChildComponent,
-        },
-        data() {
-            return {
-                title: '부모 컴퍼넌트에서 선언된 데이터입니다.',
-                createAt: 2025,
-                obj:{
-                    id: 2025,
-                    name: 'john',
-                },
-            }
-        },
-    }
+<script setup lang="ts">
+import {reactive, ref} from 'vue'
+
+interface Obj{
+    id: number
+    name: string
+}
+
+const title = ref<string>('부모 컴퍼넌트에서 선언된 데이터입니다.')
+const createAt = ref<number>(2025)
+const obj = reactive<Obj>({
+    id: 2025,
+    name: 'john',
+})
 </script>
 
 <style lang="scss" scoped>
