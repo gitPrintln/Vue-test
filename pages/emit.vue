@@ -5,14 +5,20 @@
     </div>
 </template>
 
-<script setup lang="ts">
+<script>
 import ChildComponent2 from '../components/ChildComponent2.vue'
 
-const parentEvent = (event: string) => {
-    console.log(event)
 
+export default {
+    components: {
+        ChildComponent2,
+    },
+    methods: {
+        parentEvent(event) {
+            console.log(event)
+        },
+    },
 }
-
 </script>
 
 <style lang="scss" scoped>
