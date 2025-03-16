@@ -6,11 +6,13 @@
     <div>
             <router-link to="/model2">model2 Page(router-link)</router-link>
             <div><router-link to="/">Home(router-link)</router-link></div>            
+            <div><router-link to="/emit">emit test(router-link)</router-link></div>            
     </div>
 </template>
 
 <script setup lang="ts">
 import {reactive, ref} from 'vue'
+import ChildComponent1 from '../components/ChildComponent.vue'
 
 interface Obj{
     id: number
