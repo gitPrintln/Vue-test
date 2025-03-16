@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@toast-ui/editor": "^3.2.2",
-    "nuxt": "^2.18.1",
-    "vue-router": "^3.6.5"
+    "nuxt": "^3.16.0",
+    "vue-router": "^4.5.0"
   }
 }

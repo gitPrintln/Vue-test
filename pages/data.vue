@@ -3,11 +3,14 @@
         <!--v-bind:포장지이름=-->
         <ChildComponent v-bind:props1="title" v-bind:props2="createAt" :props3="obj"/>
     </div>
+    <div>
+            <router-link to="/model2">model2 Page(router-link)</router-link>
+            <div><router-link to="/">Home(router-link)</router-link></div>            
+    </div>
 </template>
 
 <script>
 import ChildComponent from '@/components/ChildComponent.vue'
-
 export default {
         components: {
             ChildComponent,
