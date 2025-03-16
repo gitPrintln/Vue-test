@@ -14,6 +14,9 @@
   <div>
   <button @click="goToHome2">v-if,v-show Page(SPA방식)</button>
   </div>
+  <div>
+    <router-link to="/toast">toast gogo</router-link>
+  </div>
 </template>
 
 <script>
